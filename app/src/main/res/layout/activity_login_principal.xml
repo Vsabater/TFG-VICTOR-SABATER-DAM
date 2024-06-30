@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginContenedor"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="0dp"
+    tools:context=".LoginPrincipalActivity">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        app:srcCompat="@drawable/house_check" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/lbLoginIcono"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Login"
+            android:textColor="@color/colorTituloTextos"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/inter_bold"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_margin="0dp"
+                android:padding="0dp"
+                app:srcCompat="@drawable/logo_correo"
+                android:fontFamily="@font/inter_medium"
+                />
+
+            <EditText
+                android:id="@+id/txtCorreoLoginPrincipal"
+                android:layout_width="334dp"
+                android:layout_height="48dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginEnd="0dp"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="Correo"
+                android:inputType="text"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="30dp"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/candado_password"
+
+                />
+
+            <EditText
+                android:id="@+id/txtPasswordLoginPrincipal"
+                android:layout_width="334dp"
+                android:layout_height="48dp"
+                android:layout_margin="0dp"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_weight="2"
+                android:ems="10"
+                android:hint="Contraseña"
+                android:inputType="textPassword"
+
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearBotones"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <Button
+            android:id="@+id/btnIniciarSesionLoginPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/inter_bold"
+            android:gravity="center"
+            android:text="INICIAR SESION"
+            android:textSize="18sp"
+            app:backgroundTint="#517AB7" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lnCuentas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="0"
+            android:orientation="horizontal"></LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnRegistrarseLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="¿No tienes cuenta?"
+                android:fontFamily="@font/inter_medium"
+                />
+
+            <TextView
+                android:id="@+id/txtRegistrarLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:text="  REGISTRARSE"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter_bold"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lnRestaurar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="3dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_medium"
+                android:text="¿Has olvidado la contraseña? Pulsa"
+                android:textSize="13sp"
+
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtRestaurar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_bold"
+                android:text="  aquí   "
+                android:textColor="@color/colorTituloTextos"
+                android:textStyle="bold"
+
+                />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_medium"
+                android:text="para restaurarla"
+                android:textSize="13sp"
+
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

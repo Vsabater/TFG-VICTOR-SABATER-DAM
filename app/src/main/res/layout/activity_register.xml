@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/lbLogoRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Registro"
+            android:textColor="@color/colorTituloTextos"
+            android:textSize="30sp"
+            android:fontFamily="@font/inter_bold"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imgFotoPerfilRegistro"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:src="@drawable/baseline_account_circle_24"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/txtNombreRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Nombre"
+            android:inputType="text"
+            />
+
+        <EditText
+            android:id="@+id/txtApellidoRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            android:ems="10"
+            android:hint="Apellido"
+            android:inputType="text"
+
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/txtEdadRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:ems="10"
+            android:hint="Edad"
+            android:inputType="number"
+
+            />
+
+        <EditText
+            android:id="@+id/txtCorreoRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:ems="10"
+            android:hint="Correo"
+            android:inputType="textEmailAddress"
+
+            />
+
+        <EditText
+            android:id="@+id/txtContrasenyaRegistro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:ems="10"
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+
+            />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="-Contraseña mínima 6 caracteres"
+            android:fontFamily="@font/inter_medium"
+
+            />
+
+        <Button
+            android:id="@+id/btnRegistroRegistro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            app:backgroundTint="#517AB7"
+            android:text="REGISTRARSE"
+            android:fontFamily="@font/inter_medium"
+
+            />
+    </LinearLayout>
+</LinearLayout>

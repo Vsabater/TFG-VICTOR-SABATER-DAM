@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "430261503657",
+    "firebase_url": "https://tfg-victor-sabater-final-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "tfg-victor-sabater-final",
+    "storage_bucket": "tfg-victor-sabater-final.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:430261503657:android:a8c12ad4c5be353b7ccbb8",
+        "android_client_info": {
+          "package_name": "com.example.tfgvictor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAk66zklHjAi7Ce9-vnQqX_GICTCveFoRM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
